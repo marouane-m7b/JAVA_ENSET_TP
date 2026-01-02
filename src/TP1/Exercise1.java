@@ -18,13 +18,39 @@ public class Exercise1 {
             grades[i] = scanner.nextDouble();
         }
 
-        sortAndDisplay(grades);
-        displayAverage(grades);
-        displayMinMax(grades);
+        int choice;
+        do {
+            System.out.println("\n===== MENU =====");
+            System.out.println("1. Sort and display grades");
+            System.out.println("2. Display average grade");
+            System.out.println("3. Display highest and lowest grades");
+            System.out.println("4. Count students with specific grade");
+            System.out.println("0. Exit");
+            System.out.print("Your choice: ");
+            choice = scanner.nextInt();
 
-        System.out.print("Enter the grade to search: ");
-        double searchGrade = scanner.nextDouble();
-        countGrade(grades, searchGrade);
+            switch (choice) {
+                case 1:
+                    sortAndDisplay(grades);
+                    break;
+                case 2:
+                    displayAverage(grades);
+                    break;
+                case 3:
+                    displayMinMax(grades);
+                    break;
+                case 4:
+                    System.out.print("Enter the grade to search: ");
+                    double searchGrade = scanner.nextDouble();
+                    countGrade(grades, searchGrade);
+                    break;
+                case 0:
+                    System.out.println("Goodbye!");
+                    break;
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        } while (choice != 0);
 
         scanner.close();
     }
