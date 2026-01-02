@@ -20,6 +20,7 @@ public class Exercise1 {
 
         sortAndDisplay(grades);
         displayAverage(grades);
+        displayMinMax(grades);
 
         scanner.close();
     }
@@ -41,5 +42,18 @@ public class Exercise1 {
         }
         double average = sum / grades.length;
         System.out.printf("\nAverage grade: %.2f\n", average);
+    }
+
+    public static void displayMinMax(double[] grades) {
+        double min = grades[0];
+        double max = grades[0];
+
+        for (double grade : grades) {
+            if (grade < min) min = grade;
+            if (grade > max) max = grade;
+        }
+
+        System.out.println("\nHighest grade: " + max);
+        System.out.println("Lowest grade: " + min);
     }
 }
