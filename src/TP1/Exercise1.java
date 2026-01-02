@@ -19,6 +19,7 @@ public class Exercise1 {
         }
 
         sortAndDisplay(grades);
+        displayAverage(grades);
 
         scanner.close();
     }
@@ -31,5 +32,14 @@ public class Exercise1 {
             System.out.print(grade + " ");
         }
         System.out.println();
+    }
+
+    public static void displayAverage(double[] grades) {
+        double sum = 0;
+        for (double grade : grades) {
+            sum += grade;
+        }
+        double average = sum / grades.length;
+        System.out.printf("\nAverage grade: %.2f\n", average);
     }
 }
