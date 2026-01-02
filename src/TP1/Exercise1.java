@@ -22,6 +22,10 @@ public class Exercise1 {
         displayAverage(grades);
         displayMinMax(grades);
 
+        System.out.print("Enter the grade to search: ");
+        double searchGrade = scanner.nextDouble();
+        countGrade(grades, searchGrade);
+
         scanner.close();
     }
 
@@ -55,5 +59,15 @@ public class Exercise1 {
 
         System.out.println("\nHighest grade: " + max);
         System.out.println("Lowest grade: " + min);
+    }
+
+    public static void countGrade(double[] grades, double searchGrade) {
+        int count = 0;
+        for (double grade : grades) {
+            if (grade == searchGrade) {
+                count++;
+            }
+        }
+        System.out.println("\nNumber of students with grade " + searchGrade + ": " + count);
     }
 }
