@@ -409,3 +409,5 @@ public class Exercise4 {
 
 ### Program Execution
 
+![Exercise 4 - Screenshot 1](Ex4-1.PNG)
+
