@@ -144,6 +144,7 @@ public class Exercise1 {
 
 ![Exercise 1 - Screenshot 1](Ex1-1.PNG)
 ![Exercise 1 - Screenshot 2](Ex1-2.PNG)
+![Exercise 1 - Screenshot 3](Ex1-3.PNG)
 
 
 ---
