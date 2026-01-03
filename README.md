@@ -345,6 +345,10 @@ public class Exercise3 {
 
 ### Program Execution
 
+![Exercise 3 - Screenshot 1](Ex3-1.PNG)
+![Exercise 3 - Screenshot 2](Ex3-2.PNG)
+![Exercise 3 - Screenshot 3](Ex3-3.PNG)
+
 
 ---
 
