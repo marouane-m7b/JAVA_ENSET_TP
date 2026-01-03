@@ -207,6 +207,7 @@ public class Exercise2 {
 
 ### Program Execution
 
+![Exercise 2 - Screenshot 1](Ex2-1.PNG)
 
 ---
 
