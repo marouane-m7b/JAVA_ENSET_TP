@@ -6,18 +6,67 @@ public class Exercise3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String text = "";
+        int choice;
 
-        System.out.print("Enter a string: ");
-        text = input.nextLine();
-        System.out.println("String saved successfully!\n");
+        do {
+            System.out.println("\n========== MENU ==========");
+            System.out.println("1. Enter");
+            System.out.println("2. Display");
+            System.out.println("3. Reverse");
+            System.out.println("4. Number of words");
+            System.out.println("0. Exit");
+            System.out.print("Your choice: ");
+            choice = input.nextInt();
+            input.nextLine();
 
-        System.out.println("The string is: " + text + "\n");
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter a string: ");
+                    text = input.nextLine();
+                    System.out.println("String saved successfully!");
+                    waitForKey(input);
+                    break;
 
-        String reversed = reverseString(text);
-        System.out.println("Reversed string: " + reversed + "\n");
+                case 2:
+                    if (text.isEmpty()) {
+                        System.out.println("No string has been entered yet.");
+                    } else {
+                        System.out.println("The string is: " + text);
+                    }
+                    waitForKey(input);
+                    break;
 
-        int wordCount = countWords(text);
-        System.out.println("Number of words: " + wordCount);
+                case 3:
+                    if (text.isEmpty()) {
+                        System.out.println("No string has been entered yet.");
+                    } else {
+                        String reversed = reverseString(text);
+                        System.out.println("Reversed string: " + reversed);
+                    }
+                    waitForKey(input);
+                    break;
+
+                case 4:
+                    if (text.isEmpty()) {
+                        System.out.println("No string has been entered yet.");
+                    } else {
+                        int wordCount = countWords(text);
+                        System.out.println("Number of words: " + wordCount);
+                    }
+                    waitForKey(input);
+                    break;
+
+                case 0:
+                    System.out.println("Exiting program...");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice! Please try again.");
+                    waitForKey(input);
+            }
+        } while (choice != 0);
+
+        input.close();
     }
 
     public static String reverseString(String str) {
@@ -52,5 +101,10 @@ public class Exercise3 {
         }
 
         return wordCount;
+    }
+
+    public static void waitForKey(Scanner input) {
+        System.out.println("\nPress any key to return to the menu.");
+        input.nextLine();
     }
 }
