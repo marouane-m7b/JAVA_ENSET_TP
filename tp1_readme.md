@@ -24,7 +24,7 @@ The program runs in a loop until the user chooses to exit.
 ### Solution
 
 ```java
-package TP1;
+package TP1_Strings_Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -158,7 +158,7 @@ This program conjugates regular first-group French verbs (those ending in "er").
 ### Solution
 
 ```java
-package TP1;
+package TP1_Strings_Arrays;
 
 import java.util.Scanner;
 
@@ -220,7 +220,7 @@ This program offers a menu to perform operations on a string. The user must firs
 ### Solution
 
 ```java
-package TP1;
+package TP1_Strings_Arrays;
 
 import java.util.Scanner;
 
@@ -238,7 +238,7 @@ public class Exercise3 {
             System.out.println("4. Count number of words");
             System.out.println("0. Exit");
             System.out.print("Your choice: ");
-            
+
             choice = input.nextInt();
             input.nextLine(); // Important: Consume the leftover newline character
 
@@ -361,7 +361,7 @@ This program performs a frequency analysis of letters in a text. The user enters
 ### Solution
 
 ```java
-package TP1;
+package TP1_Strings_Arrays;
 
 import java.util.Scanner;
 
@@ -376,7 +376,7 @@ public class Exercise4 {
         text = text.toUpperCase();
 
         System.out.println("\nCharacter frequency:");
-        
+
         // Loop through every letter from A to Z
         for (char letter = 'A'; letter <= 'Z'; letter++) {
             int count = 0;
