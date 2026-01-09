@@ -142,9 +142,9 @@ public class Exercise1 {
 * **Min/Max**: Initialize min/max with the first element, then loop through the rest to compare.
 ### Program Execution
 
-![Exercise 1 - Screenshot 1](Ex1-1.PNG)
-![Exercise 1 - Screenshot 2](Ex1-2.PNG)
-![Exercise 1 - Screenshot 3](Ex1-3.PNG)
+![Exercise 1 - Screenshot 1](tp1_assets/Ex1-1.PNG)
+![Exercise 1 - Screenshot 2](tp1_assets/Ex1-2.PNG)
+![Exercise 1 - Screenshot 3](tp1_assets/Ex1-3.PNG)
 
 
 ---
@@ -207,7 +207,7 @@ public class Exercise2 {
 
 ### Program Execution
 
-![Exercise 2 - Screenshot 1](Ex2-1.PNG)
+![Exercise 2 - Screenshot 1](tp1_assets/Ex2-1.PNG)
 
 ---
 
@@ -345,9 +345,9 @@ public class Exercise3 {
 
 ### Program Execution
 
-![Exercise 3 - Screenshot 1](Ex3-1.PNG)
-![Exercise 3 - Screenshot 2](Ex3-2.PNG)
-![Exercise 3 - Screenshot 3](Ex3-3.PNG)
+![Exercise 3 - Screenshot 1](tp1_assets/Ex3-1.PNG)
+![Exercise 3 - Screenshot 2](tp1_assets/Ex3-2.PNG)
+![Exercise 3 - Screenshot 3](tp1_assets/Ex3-3.PNG)
 
 
 ---
@@ -409,5 +409,6 @@ public class Exercise4 {
 
 ### Program Execution
 
-![Exercise 4 - Screenshot 1](Ex4-1.PNG)
+![Exercise 4 - Screenshot 1](tp1_assets/Ex4-1.PNG)
 
+```
