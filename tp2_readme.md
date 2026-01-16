@@ -497,3 +497,10 @@ public class Application {
     }
 }
 ```
+
+### How to Solve
+
+1.  **Generic Interface**: Define `IMetier<T>` to standardize operations (CRUD) for any entity type.
+2.  **Implementation**: Create `MetierProduitImpl` that implements `IMetier<Product>`. This concretizes the generic type `T` to `Product`.
+3.  **Delete Logic**: Use `products.removeIf(p -> p.getId() == id)` for a concise and functional approach to deletion.
+4.  **Loose Coupling**: The main application interacts with the business logic class (`MetierProduitImpl`), separating the UI (Scanner loops) from the data management.
